@@ -88,3 +88,10 @@ const btn = document.getElementById('submit');
 btn?.addEventListener('click', () => {
   queryBackend();
 });
+
+const query = document.getElementById('query');
+query?.addEventListener('keyup', (keyEvent) => {
+  if (keyEvent.code.includes('Enter')) {
+    queryBackend();
+  }
+});
