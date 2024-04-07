@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Experiment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ui5-title level="H5">Query</ui5-title>
+      <ui5-input
+        id="query"
+        value="Gross Margin by Location"
+        show-clear-icon
+      ></ui5-input>
+      <ui5-button id="submit">Submit</ui5-button>
+      <br /><br />
+      <ui5-title level="H5">Result</ui5-title>
+      <ui5-busy-indicator
+        active="true"
+        id="busy"
+        text="Loading server from backend server..."
+      ></ui5-busy-indicator>
+      <ui5-message-strip design="Negative" hide-close-button="true" id="error"
+        >Error</ui5-message-strip
+      >
+      <json-viewer id="result"> </json-viewer>
+    </div>
+  </body>
+</html>

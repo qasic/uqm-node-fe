@@ -1,0 +1,24 @@
+body {
+  font-family: Lato;
+  width: 100%;
+}
+
+#query {
+  width: 80%;
+}
+
+#busy {
+  display: none;
+  width: 80%;
+}
+
+#error {
+  display: none;
+  margin-top: 12pt;
+  width: 80%;
+}
+
+#result {
+  display: none;
+  width: 80%;
+}
